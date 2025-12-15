@@ -3,9 +3,13 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
+import healthSchedule from "@/public/health-schedule.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import blogVerse from "@/public/blog-verse.png";
+import chatbot from "@/public/chatbot.png";
+import DailyBasket from "@/public/daily-basket.png";
+import ShowHub from "@/public/showhub.png";
 export const links = [
   {
     name: "Home",
@@ -35,56 +39,81 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full Stack Intern",
+    location: "IIT Bombay EdTech Society",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Worked on collaborative project for solving real world problem in EdTech domain under guidance of IIT Bombay mentors, with a strong focus on research-driven problem solving and implementation.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jul 2025 - Oct 2025",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Trainee",
+    location: "Collab Vision Infosolutions, Kolhapur",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    "Worked on web and app projects that can solve real world problems that helps me to improve my technical skills as well as problem solving skills by working with experienced peoples.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jul 2025 - Sept 2025",
+  },
+  {
+    title: "Networking Intern",
+    location: "Indradeep Information Technologies Pvt. Ltd.",
+    description:"Learned basic networking tasks like crimping, File sharing in LAN, OS installation, CPU installing, IP Address configs etc. during my diploma.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jul 2022 - Aug 2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "HealthShedule",
+    description:"Built a multi-hospital platform with phone call/online appointment booking in any preferred slot in day, centralized admin control for hospitals and doctors, and doctor consultations with e-prescriptions and video calls.",
+    tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
+    imageUrl: healthSchedule,
+    link: "https://health-scheduling.vercel.app/",
+    type:"web"
   },
   {
-    title: "rmtDev",
+    title: "DYPCET Chatbot",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed an interactive Agentic AI chatbot that intelligently answers user queries, supports document-based Q&A (PDF/Word uploads), and performs real-time academic tasks like attendance and timetable retrieval using AI agents, Groq-powered inference, and a high-performance Next.js stack.",
+    tags: ["Next.js", "Typescript", "Groq API", "Pdf-parser","MySQL","Agentic AI"],
+    imageUrl:chatbot,
+    type:"web",
+    link: "https://github.com/Ombhanuse27/DYPCET-Chatbot",
   },
   {
-    title: "Word Analytics",
+    title: "BlogVerse",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    "Developed a interactive blogging platform that enables users to seamlessly publish content, connect with other bloggers through real-time chat powered by WebSockets, and engage socially by liking, sharing, saving, posts and following bloggers.",
+    tags: ["MERN Stack", "Socket.io", "OAuth", "Vercel", "Render","Docker"],
+    imageUrl: blogVerse,
+    link: "https://blog-site-azure-ten.vercel.app/",
+    type:"web"
   },
+  
+  {
+    title: "DailyBasket",
+    description:
+    "Developed a grocery app for shopkeepers to manage inventory, track sales/revenue, and generate bills. Implemented role-based access for employees to manage products and billing.",
+    tags: ["Flutter", "Dart", "Firebase", "Brevo"],
+    imageUrl:DailyBasket,
+    type:"mobile",
+    link: "https://github.com/Ombhanuse27/daily_basket",
+  },
+  {
+    title: "ShowHub",
+    description:
+    "Developed responsive and user-friendly movie ticket booking application where users can explore currently running movies, view showtimes, select seats, and book tickets and get downloadable ticket. Designed with real-world functionality and a smooth UI experience. ",
+    tags: ["XML", "Java","Android SDK", "Firebase"],
+    imageUrl:ShowHub,
+    type:"mobile",
+    link: "https://github.com/Ombhanuse27/showwhub",
+  },
+
 ] as const;
 
 export const skillsData = [
+  "Java",
   "HTML",
   "CSS",
   "JavaScript",
@@ -92,16 +121,20 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-  "Git",
+  "Express.js",
+  "Git/GitHub",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Tailwind",
+  "REST APIs",
+  "MySQL",
+  "Firebase",
   "Python",
-  "Django",
-  "Framer Motion",
+  "PHP",
+  "Vercel",
+  "Render",
+  "Docker",
+  "Postman",
+
 ] as const;
