@@ -10,6 +10,7 @@ import blogVerse from "@/public/blog-verse.png";
 import chatbot from "@/public/chatbot.png";
 import DailyBasket from "@/public/daily-basket.png";
 import ShowHub from "@/public/showhub.png";
+import skillpulse from "@/public/skillpulse.png";
 export const links = [
   {
     name: "Home",
@@ -39,10 +40,18 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Full Stack Developer Intern",
+    location: "Softcadd Technologies, Pune",
+    description:
+      "Currently contributing as a Full Stack Developer on multi-role professional job search platform for businesses, professionals and freelancers, developing frontend and backend features using React, TypeScript, Tailwind CSS and Supabase. Collaborating with team members to debug issues, optimize UI flows, and deliver production-ready features",
+    icon: React.createElement(FaReact),
+    date: "Jun 2026 - Present",
+  },
+  {
     title: "Full Stack Intern",
     location: "IIT Bombay EdTech Society",
     description:
-      "Worked on collaborative project for solving real world problem in EdTech domain under guidance of IIT Bombay mentors, with a strong focus on research-driven problem solving and implementation.",
+      "Collaborated on full-stack project addressing real-world challenges in EdTech domain under guidance of IIT Bombay mentor, with strong focus on research-driven problem solving and implementation.",
     icon: React.createElement(LuGraduationCap),
     date: "Jul 2025 - Oct 2025",
   },
@@ -50,17 +59,11 @@ export const experiencesData = [
     title: "Software Trainee",
     location: "Collab Vision Infosolutions, Kolhapur",
     description:
-    "Worked on web and app projects that can solve real world problems that helps me to improve my technical skills as well as problem solving skills by working with experienced peoples.",
+    "Contributed to real-world application projects, improving my technical expertise, problem-solving skills, and ability to work effectively with experienced development teams.",
     icon: React.createElement(FaReact),
     date: "Jul 2025 - Sept 2025",
   },
-  {
-    title: "Networking Intern",
-    location: "Indradeep Information Technologies Pvt. Ltd.",
-    description:"Learned basic networking tasks like crimping, File sharing in LAN, OS installation, CPU installing, IP Address configs etc. during my diploma.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jul 2022 - Aug 2022",
-  },
+ 
 ] as const;
 
 export const projectsData = [
@@ -72,6 +75,15 @@ export const projectsData = [
     link: "https://health-scheduling.vercel.app/",
     type:"web"
   },
+   {
+    title: "SkillPulse.ai",
+    description:"Built a AI career coaching platform using AI agents to analyze resumes, identify skill gaps, generate actionable reports (roadmaps, project ideas, quizzes, ATS improvements) and conduct mock interviews with real-time feedback. Integrated Groq LLMs with langchain for low-latency inference for mock interview simulations and resume analysis for report.",
+    tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","Supabase" ,"Typescript"],
+    imageUrl: skillpulse,
+    link: "https://skills-pulse-ai-agent.vercel.app/",
+    type:"web"
+  },
+  
   {
     title: "DYPCET Chatbot",
     description:
