@@ -77,7 +77,7 @@ export const projectsData = [
   },
    {
     title: "SkillPulse.ai",
-    description:"Developed an AI-powered career coaching platform using multi-agent LLM orchestration to generate personalized learning roadmaps, mock interview simulations, and resume skill-gap analysis with LangChain, PDF parsing, and tool-calling. Architected a real-time gamified learning dashboard with XP, streak, and goal tracking using LangGraph-based agent workflows, exposing GraphQL APIs and persisting structured learning plans in PostgreSQL via Prisma ORM.Built a streaming Neural Mentor AI assistant enabling real-time concept explanations, contextual Q&A, and adaptive quiz generation for interactive learning experiences.",
+    description:"Built an AI-powered career coaching platform using multi-agent LLMs to generate personalized learning roadmaps, mock interviews, and resume skill-gap analysis. Developed a gamified learning dashboard with LangGraph workflows, GraphQL APIs, and PostgreSQL (Prisma). Created a streaming Neural Mentor AI assistant for real-time explanations, contextual Q&A, and adaptive quizzes to deliver an interactive learning experience.",
     tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","Supabase" ,"Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
