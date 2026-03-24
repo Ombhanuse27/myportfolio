@@ -43,7 +43,7 @@ export const experiencesData = [
     title: "Full Stack Developer Intern",
     location: "Softcadd Technologies, Pune",
     description:
-      "Currently contributing as a Full Stack Developer on multi-role professional job search platform for businesses, professionals and freelancers, developing frontend and backend features using React, TypeScript, Tailwind CSS and Supabase. Collaborating with team members to debug issues, optimize UI flows, and deliver production-ready features",
+"Developed and optimized production-ready frontend and backend modules using React, TypeScript, Tailwind CSS, and Supabase for a multi-role job search platform serving 200+ active users, improving application response time by 20%. Debugged production issues, optimized UI workflows, and collaborated using Git in an Agile development environment to deliver stable, production-ready deployments with improved application reliability.",
     icon: React.createElement(FaReact),
     date: "Jun 2026 - Present",
   },
@@ -59,9 +59,9 @@ export const experiencesData = [
     title: "Software Trainee",
     location: "Collab Vision Infosolutions, Kolhapur",
     description:
-    "Contributed to real-world application projects, improving my technical expertise, problem-solving skills, and ability to work effectively with experienced development teams.",
+    "Developed and contributed to real-world Web and Android applications, implementing features, integrating APIs, and improving applications performance, reliability, and user experience.",
     icon: React.createElement(FaReact),
-    date: "Jul 2025 - Sept 2025",
+    date: "Jun 2025 - Aug 2025",
   },
  
 ] as const;
@@ -85,13 +85,13 @@ export const projectsData = [
   },
   
   {
-    title: "DYPCET Chatbot",
+    title: "StudentGPT - AI Academic Assistant",
     description:
       "Developed an interactive Agentic AI chatbot that intelligently answers user queries, supports document-based Q&A (PDF/Word uploads), and performs real-time academic tasks like attendance and timetable retrieval using AI agents, Groq-powered inference, and a high-performance Next.js stack.",
     tags: ["Next.js", "Typescript", "Groq API", "Pdf-parser","MySQL","Agentic AI"],
     imageUrl:chatbot,
     type:"web",
-    link: "https://github.com/Ombhanuse27/DYPCET-Chatbot",
+    link: "https://dypcet-chatbot.vercel.app/",
   },
   {
     title: "BlogVerse",
