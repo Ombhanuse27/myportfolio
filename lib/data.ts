@@ -77,7 +77,7 @@ export const projectsData = [
   },
    {
     title: "SkillPulse.ai",
-    description:"Built a AI career coaching platform using AI agents to analyze resumes, identify skill gaps, generate actionable reports (roadmaps, project ideas, quizzes, ATS improvements) and conduct mock interviews with real-time feedback. Integrated Groq LLMs with langchain for low-latency inference for mock interview simulations and resume analysis for report.",
+    description:"Developed an AI-powered career coaching platform using multi-agent LLM orchestration to generate personalized learning roadmaps, mock interview simulations, and resume skill-gap analysis with LangChain, PDF parsing, and tool-calling. Architected a real-time gamified learning dashboard with XP, streak, and goal tracking using LangGraph-based agent workflows, exposing GraphQL APIs and persisting structured learning plans in PostgreSQL via Prisma ORM.Built a streaming Neural Mentor AI assistant enabling real-time concept explanations, contextual Q&A, and adaptive quiz generation for interactive learning experiences.",
     tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","Supabase" ,"Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
@@ -87,7 +87,7 @@ export const projectsData = [
   {
     title: "StudentGPT - AI Academic Assistant",
     description:
-      "Developed an interactive Agentic AI chatbot that intelligently answers user queries, supports document-based Q&A (PDF/Word uploads), and performs real-time academic tasks like attendance and timetable retrieval using AI agents, Groq-powered inference, and a high-performance Next.js stack.",
+      "Built an AI-powered chatbot to automate students’ academic queries such as attendance, timetable and syllabus retrieval. Implemented a Retrieval-Augmented Generation (RAG) pipeline with PDF/DOCX document parsing and LLM integration to enable users to upload documents and receive AI-driven, context-aware responses.",
     tags: ["Next.js", "Typescript", "Groq API", "Pdf-parser","MySQL","Agentic AI"],
     imageUrl:chatbot,
     type:"web",
