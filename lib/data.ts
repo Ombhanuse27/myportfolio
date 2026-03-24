@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import healthSchedule from "@/public/health-schedule.png";
+import healthSchedule from "@/public/Health-schedule.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import blogVerse from "@/public/blog-verse.png";
@@ -67,20 +67,22 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-  {
-    title: "HealthShedule",
-    description:"Built a multi-hospital platform with phone call/online appointment booking in any preferred slot in day, centralized admin control for hospitals and doctors, and doctor consultations with e-prescriptions and video calls.",
-    tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
-    imageUrl: healthSchedule,
-    link: "https://health-scheduling.vercel.app/",
-    type:"web"
-  },
+  
    {
     title: "SkillPulse.ai",
     description:"Built an AI-powered career coaching platform using multi-agent LLMs to generate personalized learning roadmaps, mock interviews, and resume skill-gap analysis. Developed a gamified learning dashboard with LangGraph workflows, GraphQL APIs, and PostgreSQL (Prisma). Created a streaming Neural Mentor AI assistant for real-time explanations, contextual Q&A, and adaptive quizzes to deliver an interactive learning experience.",
     tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","Supabase" ,"Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
+    type:"web"
+  },
+
+  {
+    title: "HealthShedule",
+    description:"Built a multi-hospital appointment booking platform with AI calling automation, real-time scheduling, and RBAC for admin management of hospital profiles and workflows and Implemented WebRTC + PeerJS video teleconsultation, doctor dashboard, and digital e-prescriptions optimized for low-latency communication.",
+    tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
+    imageUrl: healthSchedule,
+    link: "https://health-scheduling.vercel.app/",
     type:"web"
   },
   
