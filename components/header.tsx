@@ -12,28 +12,30 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
-      <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-      ></motion.div>
-
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+    <header className="z-[999] relative flex justify-center">
+      <motion.nav
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className="fixed top-4 sm:top-6 flex w-[calc(100%-2rem)] sm:w-auto max-w-full items-center justify-center 
+                   rounded-full bg-white/40 dark:bg-slate-900/40 border border-white/60 dark:border-slate-800/60 
+                   shadow-lg shadow-indigo-500/5 backdrop-blur-xl px-2 py-2 sm:px-4 transition-all"
+      >
+        <ul className="flex items-center justify-start sm:justify-center gap-1 sm:gap-2 flex-nowrap 
+                       w-full sm:w-auto overflow-x-auto scroll-smooth
+                       [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="relative flex items-center justify-center shrink-0"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 rounded-full font-mono text-[11px] sm:text-[13px] font-medium transition-colors duration-300",
                   {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
+                    "text-indigo-700 dark:text-indigo-300": activeSection === link.name,
+                    "text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400": activeSection !== link.name,
                   }
                 )}
                 href={link.hash}
@@ -42,11 +44,13 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.name}
+                {/* Developer touch: Added subtle curly braces to the active link */}
+                {activeSection === link.name ? `{ ${link.name} }` : link.name}
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    className="absolute inset-0 -z-10 rounded-full bg-white dark:bg-slate-800 
+                               shadow-sm border border-slate-200/50 dark:border-slate-700/50"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
@@ -59,7 +63,7 @@ export default function Header() {
             </motion.li>
           ))}
         </ul>
-      </nav>
+      </motion.nav>
     </header>
   );
 }

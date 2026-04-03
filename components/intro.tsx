@@ -11,8 +11,8 @@ import { useSectionInView } from "@/lib/hooks";
 import mine from "@/public/mine.jpeg";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-const roles = ["Full-Stack Dev", "DevOps Explorer", "Next.js Builder", "MERN Architect"];
-const STACK = ["React", "Next.js", "Node", "MongoDB", "Docker", "TypeScript", "Express", "Android"];
+const roles = ["Full-Stack Developer", "DevOps Explorer", "Next.js Builder", "MERN Stack Developer","Agentic AI Enthusiast"];
+const STACK = ["React", "Next.js", "Node", "Express", "TypeScript","Docker","MongoDB","PostgreSQL","Supabase","GitHub","Vercel","Render"];
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -147,10 +147,11 @@ export default function Intro() {
             className="text-slate-600 dark:text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed
                        max-w-[42ch] mb-8 lg:mb-10"
           >
-            BTech CS student crafting scalable web apps with the{" "}
-            <span className="text-slate-900 dark:text-white font-semibold">MERN stack</span>.
-            Obsessed with clean code, fast pipelines, and{" "}
-            <span className="text-indigo-600 dark:text-indigo-400 font-semibold">great UX</span>.
+            Full-stack developer skilled in building scalable web applications using {" "}
+            <span className="text-slate-900 dark:text-white font-semibold">MERN stack, Next.js, Agentic AI, and DevOps</span>.
+            Turning ideas into fast, scalable, production-ready products.{" "}
+
+            <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Code. Build. Optimize. Ship.</span>
           </motion.p>
 
           {/* ── FIXED CTAs (Buttons are now inline) ── */}
