@@ -83,7 +83,8 @@ export const projectsData = [
     tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
     imageUrl: healthSchedule,
     link: "https://health-scheduling.vercel.app/",
-    type:"web"
+    type:"web",
+    githubUrl: "https://github.com/..."
   },
   
   {
