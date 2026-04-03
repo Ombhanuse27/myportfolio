@@ -219,7 +219,7 @@ export default function Intro() {
           >
             {[
               { val: "10+", label: "Projects" },
-              { val: "2+", label: "Years coding" },
+              { val: "5+", label: "Years coding" },
               { val: "5+", label: "Tech Stack" },
             ].map(({ val, label }) => (
               <div key={label} className="flex flex-col items-center sm:items-start">

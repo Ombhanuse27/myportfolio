@@ -91,7 +91,7 @@ export const projectsData = [
     title: "StudentGPT - AI Academic Assistant",
     description:
       "Built an AI-powered chatbot to automate students’ academic queries such as attendance, timetable and syllabus retrieval. Implemented a Retrieval-Augmented Generation (RAG) pipeline with PDF/DOCX document parsing and LLM integration to enable users to upload documents and receive AI-driven, context-aware responses.",
-    tags: ["Next.js", "Typescript", "Groq API", "Pdf-parser","MySQL","Agentic AI"],
+    tags: ["Next.js", "Typescript", "Groq API", "LLM", "RAG","Pdf-parser","MySQL","Agentic AI"],
     imageUrl:chatbot,
     type:"web",
     link: "https://dypcet-chatbot.vercel.app/",

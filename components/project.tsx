@@ -41,33 +41,45 @@ export default function Project({
                  rounded-[1.5rem] overflow-hidden backdrop-blur-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 
                  transition-all duration-500 h-full"
     >
-      {/* ── IMAGE SECTION (Reduced Height) ── */}
-      {/* Changed height from h-64/72 to h-48/56 to make the card less top-heavy */}
-      <div className="relative h-48 sm:h-56 w-full overflow-hidden border-b border-slate-200 dark:border-slate-800">
-        <Image
-          src={imageUrl}
-          alt={title}
-          fill
-          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-indigo-900/10 dark:bg-indigo-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {/* ── IMAGE SECTION (Browser Mockup Style) ── */}
+      <div className="relative w-full aspect-[16/10] overflow-hidden border-b border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800/50">
+        
+        {/* Mac OS Style Browser Top Bar */}
+        <div className="absolute top-0 left-0 w-full h-7 sm:h-8 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md 
+                        border-b border-slate-200/50 dark:border-slate-700/50 flex items-center px-3 sm:px-4 gap-1.5 sm:gap-2 z-10">
+          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-rose-400/80 shadow-inner"></div>
+          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-amber-400/80 shadow-inner"></div>
+          <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-400/80 shadow-inner"></div>
+        </div>
+
+        {/* The Actual Image (FIXED: Now inside an absolutely positioned container) */}
+        <div className="absolute top-7 sm:top-8 left-0 right-0 bottom-0 overflow-hidden">
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            quality={95}
+            className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+          />
+        </div>
+        
+        {/* Subtle dark overlay on hover */}
+        <div className="absolute inset-0 bg-indigo-900/10 dark:bg-indigo-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-20" />
       </div>
 
-      {/* ── CONTENT SECTION (Tightened Padding) ── */}
-      {/* Reduced padding from p-8 to p-5/6 */}
-      <div className="flex flex-col flex-grow p-5 sm:p-6">
+      {/* ── CONTENT SECTION ── */}
+      <div className="flex flex-col flex-grow p-5 sm:p-6 sm:pt-7">
         
-        <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">
+        <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">
           {title}
         </h3>
         
-        {/* Added line-clamp-4 to force a maximum height limit on text */}
-        <p className="mt-2 text-slate-600 dark:text-slate-300 leading-relaxed text-sm mb-5 flex-grow line-clamp-4">
+        <p className="mt-2 text-slate-600 dark:text-slate-300 leading-relaxed text-sm mb-6 flex-grow line-clamp-4">
           {description}
         </p>
         
-        {/* Tech Stack Tags (Reduced bottom margin) */}
-        <ul className="flex flex-wrap gap-1.5 mb-6">
+        {/* Tech Stack Tags */}
+        <ul className="flex flex-wrap gap-1.5 sm:gap-2 mb-7">
           {tags.map((tag, idx) => (
             <li
               key={idx}
@@ -81,14 +93,14 @@ export default function Project({
         </ul>
 
         {/* ── ACTION BUTTONS ── */}
-        <div className="flex items-center gap-3 mt-auto pt-4 border-t border-slate-200 dark:border-slate-800/60">
+        <div className="flex items-center gap-3 mt-auto pt-5 border-t border-slate-200/80 dark:border-slate-800/80">
           
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 group/btn flex items-center justify-center gap-2 bg-slate-900 dark:bg-white 
-                       text-white dark:text-slate-900 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all 
+                       text-white dark:text-slate-900 px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all 
                        hover:scale-[1.02] active:scale-95 shadow-md"
           >
             View Live Project
