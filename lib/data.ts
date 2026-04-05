@@ -51,12 +51,12 @@ export const experiencesData = [
     title: "Full Stack Intern",
     location: "IIT Bombay EdTech Society",
     description:
-      "Collaborated on full-stack project addressing real-world challenges in EdTech domain under guidance of IIT Bombay mentor, with strong focus on research-driven problem solving and implementation.",
+      "Engineered scalable full-stack modules for an EdTech platform using React.js, Node.js, Express, and MongoDB, building secure RESTful APIs with JWT authentication and real-time data aggregation for a unified performance dashboard.",
     icon: React.createElement(LuGraduationCap),
     date: "Jul 2025 - Oct 2025",
   },
   {
-    title: "Software Trainee",
+    title: "Software Developer Intern",
     location: "Collab Vision Infosolutions, Kolhapur",
     description:
     "Developed and contributed to real-world Web and Android applications, implementing features, integrating APIs, and improving applications performance, reliability, and user experience.",
