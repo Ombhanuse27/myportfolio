@@ -96,7 +96,7 @@ export const projectsData = [
     imageUrl:chatbot,
     type:"web",
     link: "https://dypcet-chatbot.vercel.app/",
-    githubUrl: "https://github.com/Ombhanuse27/DYPCET-Chatbot "
+    githubUrl: "https://github.com/Ombhanuse27/DYPCET-Chatbot"
   },
   {
     title: "BlogVerse",
@@ -105,7 +105,8 @@ export const projectsData = [
     tags: ["MERN Stack", "Socket.io", "OAuth", "Vercel", "Render","Docker"],
     imageUrl: blogVerse,
     link: "https://blog-site-azure-ten.vercel.app/",
-    type:"web"
+    type:"web",
+    githubUrl: "https://github.com/Ombhanuse27/BlogVerse"
   },
   
   {
