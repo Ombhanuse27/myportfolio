@@ -96,7 +96,7 @@ export const projectsData = [
     imageUrl:chatbot,
     type:"web",
     link: "https://dypcet-chatbot.vercel.app/",
-    githubUrl: "  "
+    githubUrl: "https://github.com/Ombhanuse27/DYPCET-Chatbot "
   },
   {
     title: "BlogVerse",
