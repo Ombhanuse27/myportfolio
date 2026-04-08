@@ -74,7 +74,8 @@ export const projectsData = [
     tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","LangGraph","Supabase" ,"Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
-    type:"web"
+    type:"web",
+    githubUrl: "https://github.com/Ombhanuse27/SkillsPulse-AI-agent"
   },
 
   {
@@ -84,7 +85,7 @@ export const projectsData = [
     imageUrl: healthSchedule,
     link: "https://health-scheduling.vercel.app/",
     type:"web",
-    githubUrl: "https://github.com/..."
+    githubUrl: "https://github.com/Ombhanuse27/HealthSchedule"
   },
   
   {
@@ -95,6 +96,7 @@ export const projectsData = [
     imageUrl:chatbot,
     type:"web",
     link: "https://dypcet-chatbot.vercel.app/",
+    githubUrl: "  "
   },
   {
     title: "BlogVerse",
