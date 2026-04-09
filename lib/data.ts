@@ -43,7 +43,7 @@ export const experiencesData = [
     title: "Full Stack Developer Intern",
     location: "Softcadd Technologies, Pune",
     description:
-"Developed and optimized production-ready frontend and backend modules using React, TypeScript, Tailwind CSS, and Supabase for a multi-role job search platform serving 200+ active users, improving application response time by 20%. Debugged production issues, optimized UI workflows, and collaborated using Git in an Agile development environment to deliver stable, production-ready deployments with improved application reliability.",
+      "Developed and optimized production-ready frontend and backend modules using React, TypeScript, Tailwind CSS, and Supabase for a multi-role job search platform serving 200+ active users, improving application response time by 20%. Debugged production issues, optimized UI workflows, and collaborated using Git in an Agile development environment to deliver stable, production-ready deployments with improved application reliability.",
     icon: React.createElement(FaReact),
     date: "Jun 2026 - Present",
   },
@@ -59,72 +59,70 @@ export const experiencesData = [
     title: "Software Developer Intern",
     location: "Collab Vision Infosolutions, Kolhapur",
     description:
-    "Developed and contributed to real-world Web and Android applications, implementing features, integrating APIs, and improving applications performance, reliability, and user experience.",
+      "Developed and contributed to real-world Web and Android applications, implementing features, integrating APIs, and improving applications performance, reliability, and user experience.",
     icon: React.createElement(FaReact),
     date: "Jun 2025 - Aug 2025",
   },
- 
+
 ] as const;
 
 export const projectsData = [
-  
-   {
+
+  {
     title: "SkillPulse.ai",
-description: "Built an AI-powered career coaching platform using multi-agent LLMs for personalized roadmaps, mock interviews, and skill-gap analysis. Developed a gamified dashboard with LangGraph, GraphQL, and PostgreSQL (Prisma), and integrated a real-time Neural Mentor AI assistant for contextual Q&A and adaptive learning." ,
-   tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","LangGraph","Supabase" ,"Typescript"],
+    description: "Built an AI-powered career coaching platform using multi-agent LLMs for personalized roadmaps, mock interviews, and skill-gap analysis. Developed a gamified dashboard with LangGraph, GraphQL, and PostgreSQL (Prisma), and integrated a real-time Neural Mentor AI assistant for contextual Q&A and adaptive learning.",
+    tags: ["Next.js", "PDF-Parser", "Groq", "LLM", "LangChain", "LangGraph", "Supabase", "Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
-    type:"web",
+    type: "web",
     githubUrl: "https://github.com/Ombhanuse27/SkillsPulse-AI-agent"
   },
 
   {
     title: "HealthShedule",
-description: "Built a multi-hospital appointment platform with AI calling automation, real-time scheduling, and RBAC. Integrated WebRTC + PeerJS for low-latency teleconsultation, along with a doctor dashboard and digital e-prescriptions.",
-    tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
+    description: "Built a multi-hospital appointment platform with AI calling automation, real-time scheduling, and RBAC. Integrated WebRTC + PeerJS for low-latency teleconsultation, along with a doctor dashboard and digital e-prescriptions.",
+    tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS", "BrevoSDK", "Vercel", "Render", "Docker"],
     imageUrl: healthSchedule,
     link: "https://health-scheduling.vercel.app/",
-    type:"web",
+    type: "web",
     githubUrl: "https://github.com/Ombhanuse27/HealthSchedule"
   },
-  
+
   {
     title: "StudentGPT - AI Academic Assistant",
-    description:
-      "Built an AI-powered chatbot to automate students’ academic queries such as attendance, timetable and syllabus retrieval. Implemented a Retrieval-Augmented Generation (RAG) pipeline with PDF/DOCX document parsing and LLM integration to enable users to upload documents and receive AI-driven, context-aware responses.",
-    tags: ["Next.js", "Typescript", "Groq API", "LLM", "RAG","Pdf-parser","MySQL","Agentic AI"],
-    imageUrl:chatbot,
-    type:"web",
+    description: "Built an AI chatbot for automating student queries (attendance, timetable, syllabus retrieval). Implemented RAG pipeline with PDF/DOCX parsing and LLM integration, enabling users to upload documents and receive accurate, context-aware responses.",
+    tags: ["Next.js", "Typescript", "Groq API", "LLM", "RAG", "Pdf-parser", "MySQL", "Agentic AI"],
+    imageUrl: chatbot,
+    type: "web",
     link: "https://dypcet-chatbot.vercel.app/",
     githubUrl: "https://github.com/Ombhanuse27/DYPCET-Chatbot"
   },
   {
     title: "BlogVerse",
-    description:
-    "Developed a interactive blogging platform that enables users to seamlessly publish content, connect with other bloggers through real-time chat powered by WebSockets, and engage socially by liking, sharing, saving, posts and following bloggers.",
-    tags: ["MERN Stack", "Socket.io", "OAuth", "Vercel", "Render","Docker"],
+    description: "Developed an interactive blogging platform that enables users to publish content seamlessly, connect with other bloggers through real-time chat powered by WebSockets, and engage socially via likes, shares, saves, and follow features.",
+    tags: ["MERN Stack", "Socket.io", "OAuth", "Vercel", "Render", "Docker"],
     imageUrl: blogVerse,
     link: "https://blog-site-azure-ten.vercel.app/",
-    type:"web",
+    type: "web",
     githubUrl: "https://github.com/Ombhanuse27/BlogVerse"
   },
-  
+
   {
     title: "DailyBasket",
     description:
-    "Developed a grocery app for shopkeepers to manage inventory, track sales/revenue, and generate bills. Implemented role-based access for employees to manage products and billing.",
+      "Developed a grocery app for shopkeepers to manage inventory, track sales/revenue, and generate bills. Implemented role-based access for employees to manage products and billing.",
     tags: ["Flutter", "Dart", "Firebase", "Brevo"],
-    imageUrl:DailyBasket,
-    type:"mobile",
+    imageUrl: DailyBasket,
+    type: "mobile",
     link: "https://github.com/Ombhanuse27/daily_basket",
   },
   {
     title: "ShowHub",
     description:
-    "Developed responsive and user-friendly movie ticket booking application where users can explore currently running movies, view showtimes, select seats, and book tickets and get downloadable ticket. Designed with real-world functionality and a smooth UI experience. ",
-    tags: ["XML", "Java","Android SDK", "Firebase"],
-    imageUrl:ShowHub,
-    type:"mobile",
+      "Developed responsive and user-friendly movie ticket booking application where users can explore currently running movies, view showtimes, select seats, and book tickets and get downloadable ticket. Designed with real-world functionality and a smooth UI experience. ",
+    tags: ["XML", "Java", "Android SDK", "Firebase"],
+    imageUrl: ShowHub,
+    type: "mobile",
     link: "https://github.com/Ombhanuse27/showwhub",
   },
 
