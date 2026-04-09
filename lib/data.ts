@@ -70,8 +70,8 @@ export const projectsData = [
   
    {
     title: "SkillPulse.ai",
-    description:"Built an AI-powered career coaching platform using multi-agent LLMs to generate personalized learning roadmaps, mock interviews, and resume skill-gap analysis. Developed a gamified learning dashboard with LangGraph workflows, GraphQL APIs, and PostgreSQL (Prisma). Created a streaming Neural Mentor AI assistant for real-time explanations, contextual Q&A, and adaptive quizzes to deliver an interactive learning experience.",
-    tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","LangGraph","Supabase" ,"Typescript"],
+description: "Built an AI-powered career coaching platform using multi-agent LLMs for personalized roadmaps, mock interviews, and skill-gap analysis. Developed a gamified dashboard with LangGraph, GraphQL, and PostgreSQL (Prisma), and integrated a real-time Neural Mentor AI assistant for contextual Q&A and adaptive learning." ,
+   tags: ["Next.js", "PDF-Parser", "Groq", "LLM","LangChain","LangGraph","Supabase" ,"Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
     type:"web",
@@ -80,7 +80,7 @@ export const projectsData = [
 
   {
     title: "HealthShedule",
-    description:"Built a multi-hospital appointment booking platform with AI calling automation, real-time scheduling, and RBAC for admin management of hospital profiles and workflows and Implemented WebRTC + PeerJS video teleconsultation, doctor dashboard, and digital e-prescriptions optimized for low-latency communication.",
+description: "Built a multi-hospital appointment platform with AI calling automation, real-time scheduling, and RBAC. Integrated WebRTC + PeerJS for low-latency teleconsultation, along with a doctor dashboard and digital e-prescriptions.",
     tags: ["MERN Stack", "AI Calling Agent", "WebRTC", "PeerJS","BrevoSDK","Vercel" ,"Render","Docker"],
     imageUrl: healthSchedule,
     link: "https://health-scheduling.vercel.app/",
