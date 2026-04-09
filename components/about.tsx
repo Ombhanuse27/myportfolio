@@ -41,7 +41,7 @@ export default function About() {
       <div className="bg-white/40 dark:bg-slate-900/40 border border-white/60 dark:border-slate-800 
                       backdrop-blur-xl rounded-[2rem] sm:rounded-[2.5rem] shadow-2xl shadow-indigo-500/10 
                       relative overflow-hidden text-left z-10 flex flex-col">
-        
+
         {/* IDE Window Header (Mac OS Style) */}
         <div className="flex items-center px-5 py-4 bg-white/60 dark:bg-slate-800/60 border-b border-white/60 dark:border-slate-700/50 backdrop-blur-md">
           <div className="flex gap-2">
@@ -63,9 +63,9 @@ export default function About() {
 
           {/* Text Content */}
           <div className="space-y-8 text-slate-600 dark:text-slate-300 text-sm sm:text-lg leading-relaxed font-light">
-            
+
             {/* Paragraph 1 */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -76,26 +76,31 @@ export default function About() {
                 {`// 01. The Coder`}
               </span>
               <p>
-                I’m a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> with a
-                strong interest in <span className="text-indigo-600 dark:text-indigo-400 font-medium">Full Stack Development</span>{" "}
-                and <span className="text-indigo-600 dark:text-indigo-400 font-medium">DevOps</span>. I actively work with the{" "}
-                <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">MERN stack</span>, use{" "}
-                <span className="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">docker</span> 
-                for containerization, and have recently been building applications using the{" "}
-                <span className="text-slate-900 dark:text-white font-medium">Next.js framework</span>. I’m passionate about
-                learning and exploring new technologies and consistently try to implement
-                them to solve <span className="italic text-slate-500 dark:text-slate-400">real-world problems</span>. My core
-                stack includes{" "}
-                <span className="text-slate-900 dark:text-white font-semibold">
-                  React, Node.js, Express, MongoDB, and Next.js
-                </span>. I also have experience in{" "}
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium">Android development</span> using XML and Java
-                from my diploma background.
+                I am a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> with a strong focus on
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Full Stack Development</span> and
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> DevOps</span>. I specialize in building scalable web applications using the
+                <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">MERN stack</span>
+                and have hands-on experience with
+                <span className="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">Docker</span>
+                for containerization and deployment. I also work extensively with the
+                <span className="text-slate-900 dark:text-white font-medium">Next.js framework</span> to develop modern, high-performance applications.
+
+                <br /><br />
+
+                My core technical stack includes
+                <span className="text-slate-900 dark:text-white font-semibold"> React, Node.js, Express, MongoDB, and Next.js</span>,
+                with a strong foundation in system design and problem-solving. I am passionate about applying emerging technologies to solve
+                <span className="italic text-slate-500 dark:text-slate-400"> real-world problems</span> and continuously improving through hands-on development.
+
+                <br /><br />
+
+                Additionally, I have prior experience in
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium">Android development</span> using XML and Java from my diploma background.
               </p>
             </motion.div>
 
             {/* Paragraph 2 */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -106,12 +111,9 @@ export default function About() {
                 {`// 02. The Human`}
               </span>
               <p>
-                <span className="italic">When I’m not coding</span>, I enjoy playing video
-                games, watching movies & series, and drawing sketches. I also love{" "}
-                <span className="text-slate-900 dark:text-white font-medium">learning new things</span> and exploring
-                different interests. Currently, I’m learning about{" "}
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium">history</span> and experimenting with{" "}
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium">cooking</span>.
+                <span className="italic">When I’m not coding</span>, I enjoy playing video games, watching movies and series, and sketching. I also have a strong interest in
+                <span className="text-slate-900 dark:text-white font-medium"> continuous learning</span> and exploring diverse domains. Currently, I’m expanding my knowledge in
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> history with science</span>.
               </p>
             </motion.div>
 
