@@ -76,26 +76,26 @@ export default function About() {
                 {`// 01. The Coder`}
               </span>
               <p>
-                I am a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> with a strong focus on
+                I am a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> focused on
                 <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Full Stack Development</span> and
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> DevOps</span>. I specialize in building scalable web applications using the
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> DevOps</span>. I build scalable applications using the
                 <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">MERN stack</span>
                 and have hands-on experience with
                 <span className="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">Docker</span>
-                for containerization and deployment. I also work extensively with the
-                <span className="text-slate-900 dark:text-white font-medium">Next.js framework</span> to develop modern, high-performance applications.
+                for deployment. I also use the
+                <span className="text-slate-900 dark:text-white font-medium"> Next.js framework</span> to build modern, high-performance apps.
 
                 <br /><br />
 
-                My core technical stack includes
+                Skilled in
                 <span className="text-slate-900 dark:text-white font-semibold"> React, Node.js, Express, MongoDB, and Next.js</span>,
-                with a strong foundation in system design and problem-solving. I am passionate about applying emerging technologies to solve
-                <span className="italic text-slate-500 dark:text-slate-400"> real-world problems</span> and continuously improving through hands-on development.
+                with a strong foundation in system design and problem-solving. Passionate about solving
+                <span className="italic text-slate-500 dark:text-slate-400"> real-world problems</span> through hands-on development.
 
                 <br /><br />
 
-                Additionally, I have prior experience in
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium">Android development</span> using XML and Java from my diploma background.
+                Also experienced in
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Android development</span> (Java & XML) from my diploma background.
               </p>
             </motion.div>
 
