@@ -11,8 +11,8 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      // Added mt-24 sm:mt-32 to fix the overlap with the intro marquee
-      className="mb-28 mt-24 sm:mt-32 max-w-[50rem] w-full text-center sm:mb-40 scroll-mt-28 relative z-10 px-4 sm:px-0"
+      // Tightened the overall margins to reduce empty scrolling gaps
+      className="mb-20 mt-24 sm:mt-32 max-w-[50rem] w-full text-center sm:mb-32 scroll-mt-28 relative z-10 px-4 sm:px-0"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -38,16 +38,17 @@ export default function About() {
       </motion.div>
 
       {/* Glassmorphic IDE Window Container */}
-      <div className="bg-white/40 dark:bg-slate-900/40 border border-white/60 dark:border-slate-800 
-                      backdrop-blur-xl rounded-[2rem] sm:rounded-[2.5rem] shadow-2xl shadow-indigo-500/10 
-                      relative overflow-hidden text-left z-10 flex flex-col">
+      <div className="group bg-white/50 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-700/50 
+                      backdrop-blur-2xl rounded-[2rem] sm:rounded-[2.5rem] shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20 
+                      transition-all duration-500 relative overflow-hidden text-left z-10 flex flex-col">
 
         {/* IDE Window Header (Mac OS Style) */}
-        <div className="flex items-center px-5 py-4 bg-white/60 dark:bg-slate-800/60 border-b border-white/60 dark:border-slate-700/50 backdrop-blur-md">
+        <div className="flex items-center px-4 sm:px-6 py-3 sm:py-4 bg-white/60 dark:bg-slate-800/50 border-b border-slate-200/50 dark:border-slate-700/50 backdrop-blur-md transition-colors group-hover:bg-white/80 dark:group-hover:bg-slate-800/70">          
           <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-rose-500/90 shadow-inner"></div>
-            <div className="w-3 h-3 rounded-full bg-amber-500/90 shadow-inner"></div>
-            <div className="w-3 h-3 rounded-full bg-emerald-500/90 shadow-inner"></div>
+            {/* Added interactive hover states to the window buttons */}
+            <div className="w-3 h-3 rounded-full bg-rose-500/90 shadow-inner hover:bg-rose-400 transition-colors cursor-pointer"></div>
+            <div className="w-3 h-3 rounded-full bg-amber-500/90 shadow-inner hover:bg-amber-400 transition-colors cursor-pointer"></div>
+            <div className="w-3 h-3 rounded-full bg-emerald-500/90 shadow-inner hover:bg-emerald-400 transition-colors cursor-pointer"></div>
           </div>
           <p className="ml-4 font-mono text-[10px] sm:text-xs font-medium text-slate-500 dark:text-slate-400 flex items-center gap-2">
             <span className="text-indigo-500">~/portfolio</span> / about.tsx
@@ -55,14 +56,16 @@ export default function About() {
         </div>
 
         {/* Window Content */}
-        <div className="p-6 sm:p-14 pt-8 sm:pt-10">
+        {/* Tightened padding to remove excessive inner white space */}
+        <div className="p-4 sm:p-10 pt-6 sm:pt-10">
           {/* Centered Heading */}
-          <div className="flex items-center justify-center mb-10">
+          <div className="flex items-center justify-center mb-6 sm:mb-8">
             <SectionHeading>About me</SectionHeading>
           </div>
 
           {/* Text Content */}
-          <div className="space-y-8 text-slate-600 dark:text-slate-300 text-sm sm:text-lg leading-relaxed font-light">
+          {/* Reduced space-y to make the blocks feel more connected */}
+          <div className="space-y-4 sm:space-y-6 text-slate-600 dark:text-slate-300 text-sm sm:text-lg leading-relaxed font-light">
 
             {/* Paragraph 1 */}
             <motion.div
@@ -70,33 +73,38 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: 0.1, duration: 0.5 }}
-              className="relative group"
+              className="relative group/block p-3 sm:p-4 -mx-3 sm:-mx-4 rounded-2xl transition-all duration-300 hover:bg-slate-50/80 dark:hover:bg-slate-800/40 hover:-translate-y-1 hover:shadow-sm"
             >
-              <span className="block font-mono text-indigo-500 text-xs sm:text-sm font-semibold mb-2 transition-transform group-hover:translate-x-1">
+              <span className="block font-mono text-indigo-500 text-xs sm:text-sm font-semibold mb-3 transition-transform group-hover/block:translate-x-1">
                 {`// 01. The Coder`}
               </span>
-              <p>
-                I am a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> focused on
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Full Stack Development</span> and
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> DevOps</span>. I build scalable applications using the
-                <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">MERN stack</span>
-                and have hands-on experience with
-                <span className="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1">Docker</span>
-                for deployment. I also use the
-                <span className="text-slate-900 dark:text-white font-medium"> Next.js framework</span> to build modern, high-performance apps.
+              
+              {/* Removed <br/><br/> and replaced with semantic flex spacing for better gap control */}
+              <div className="flex flex-col gap-3 sm:gap-4">
+                <p>
+                  I am a <span className="text-slate-900 dark:text-white font-medium">BTech Computer Science student</span> focused on
+                  <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Full Stack Development</span> and
+                  <span className="text-indigo-600 dark:text-indigo-400 font-medium"> DevOps</span>. I build scalable applications using the
+                  {/* Made the technology tags interactive */}
+                  <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1 inline-block hover:scale-105 hover:bg-indigo-200 dark:hover:bg-indigo-500/40 transition-all cursor-default shadow-sm">MERN stack</span>
+                  and have hands-on experience with
+                  <span className="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-2 py-0.5 rounded-md font-mono text-xs sm:text-sm mx-1 inline-block hover:scale-105 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all cursor-default shadow-sm">Docker</span>
+                  for deployment. I also use the
+                  <span className="text-slate-900 dark:text-white font-medium"> Next.js framework</span> to build modern, high-performance apps.
+                </p>
 
-                <br /><br />
+                <p>
+                  Skilled in
+                  <span className="text-slate-900 dark:text-white font-semibold"> React, Node.js, Express, MongoDB, and Next.js</span>,
+                  with a strong foundation in system design and problem-solving. Passionate about solving
+                  <span className="italic text-slate-500 dark:text-slate-400"> real-world problems</span> through hands-on development.
+                </p>
 
-                Skilled in
-                <span className="text-slate-900 dark:text-white font-semibold"> React, Node.js, Express, MongoDB, and Next.js</span>,
-                with a strong foundation in system design and problem-solving. Passionate about solving
-                <span className="italic text-slate-500 dark:text-slate-400"> real-world problems</span> through hands-on development.
-
-                <br /><br />
-
-                Also experienced in
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Android development</span> (Java & XML) from my diploma background.
-              </p>
+                <p>
+                  Also experienced in
+                  <span className="text-indigo-600 dark:text-indigo-400 font-medium"> Android development</span> (Java & XML) from my diploma background.
+                </p>
+              </div>
             </motion.div>
 
             {/* Paragraph 2 */}
@@ -105,25 +113,26 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="relative group"
+              className="relative group/block p-3 sm:p-4 -mx-3 sm:-mx-4 rounded-2xl transition-all duration-300 hover:bg-slate-50/80 dark:hover:bg-slate-800/40 hover:-translate-y-1 hover:shadow-sm"
             >
-              <span className="block font-mono text-emerald-500 dark:text-emerald-400 text-xs sm:text-sm font-semibold mb-2 transition-transform group-hover:translate-x-1">
+              <span className="block font-mono text-emerald-500 dark:text-emerald-400 text-xs sm:text-sm font-semibold mb-3 transition-transform group-hover/block:translate-x-1">
                 {`// 02. The Human`}
               </span>
               <p>
                 <span className="italic">When I’m not coding</span>, I enjoy playing video games, watching movies and series, and sketching. I also have a strong interest in
                 <span className="text-slate-900 dark:text-white font-medium"> continuous learning</span> and exploring diverse domains. Currently, I’m expanding my knowledge in
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium"> history with science</span>.
+                <span className="text-indigo-600 dark:text-indigo-400 font-medium cursor-default hover:text-indigo-500 transition-colors"> history with science</span>.
+                
+                {/* Blinking Terminal Cursor moved inline for a better terminal feel */}
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: [0, 1, 0] }}
+                  transition={{ repeat: Infinity, duration: 0.8 }}
+                  className="inline-block w-2 sm:w-2.5 h-4 sm:h-5 bg-indigo-500 ml-2 -mb-0.5 align-baseline rounded-sm"
+                />
               </p>
             </motion.div>
 
-            {/* Blinking Terminal Cursor */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 1, 0] }}
-              transition={{ repeat: Infinity, duration: 0.8 }}
-              className="inline-block w-2 sm:w-3 h-4 sm:h-5 bg-indigo-500 ml-1 mt-2 align-middle rounded-sm"
-            />
           </div>
         </div>
       </div>
