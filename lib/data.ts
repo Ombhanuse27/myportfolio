@@ -49,7 +49,7 @@ export const experiencesData = [
   },
   {
     title: "Full Stack Intern",
-    location: "IIT Bombay EdTech Society",
+    location: "IIT Bombay - EdTech Society",
     description:
       "Engineered scalable full-stack modules for an EdTech platform using React.js, Node.js, Express, and MongoDB, building secure RESTful APIs with JWT authentication and real-time data aggregation for a unified performance dashboard.",
     icon: React.createElement(LuGraduationCap),
