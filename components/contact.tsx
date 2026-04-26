@@ -25,15 +25,20 @@ export default function Contact() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 
                       bg-indigo-500/20 rounded-full blur-[100px] -z-10" />
 
-      {/* Developer Background Watermark */}
-      <div className="absolute -top-10 -right-10 text-[10rem] font-mono font-bold leading-none 
-                      text-indigo-900/[0.02] dark:text-white/[0.02] pointer-events-none select-none -z-10">
+      {/* Developer Background Watermark (Animated) */}
+      <motion.div 
+        animate={{ y: [0, -10, 0], opacity: [0.02, 0.05, 0.02] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -top-10 -right-10 text-[10rem] font-mono font-bold leading-none 
+                   text-indigo-900 dark:text-white pointer-events-none select-none -z-10"
+      >
         @
-      </div>
+      </motion.div>
 
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-slate-600 dark:text-slate-300 -mt-6 mb-8 text-sm sm:text-base">
+      {/* Removed the negative margin (-mt-6) and adjusted to mt-3 and mb-12 for consistent visual rhythm */}
+      <p className="text-slate-600 dark:text-slate-300 mt-3 mb-12 text-sm sm:text-base">
         Please contact me directly at{" "}
         <a 
           className="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-all" 
@@ -45,11 +50,11 @@ export default function Contact() {
       </p>
 
       {/* Glassmorphic Form Container */}
-      <div className="bg-white/40 dark:bg-slate-900/40 border border-white/60 dark:border-slate-800 
-                      backdrop-blur-xl rounded-[2rem] p-6 sm:p-10 shadow-2xl shadow-indigo-500/5 
-                      relative overflow-hidden text-left">
+      <div className="group/form bg-white/50 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-700/50 
+                      backdrop-blur-2xl rounded-[2rem] p-6 sm:p-10 shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20 
+                      transition-all duration-500 relative overflow-hidden text-left">
         
-        <span className="block font-mono text-indigo-500 text-xs sm:text-sm font-semibold mb-6">
+        <span className="block font-mono text-indigo-500 text-xs sm:text-sm font-semibold mb-6 transition-transform duration-300 group-hover/form:translate-x-1">
           {`// Send a message`}
         </span>
 
@@ -68,10 +73,11 @@ export default function Contact() {
         >
           <div className="relative">
             <input
-              className="h-14 w-full px-5 rounded-xl border border-slate-200 dark:border-slate-700 
-                         bg-white/50 dark:bg-slate-800/50 text-slate-900 dark:text-white placeholder-slate-400 
+              className="h-14 w-full px-5 rounded-xl border border-slate-200/80 dark:border-slate-700/80 
+                         bg-white/60 dark:bg-slate-800/60 text-slate-900 dark:text-white placeholder-slate-400 
                          focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent 
-                         focus:bg-white dark:focus:bg-slate-900 transition-all duration-300 shadow-sm"
+                         focus:bg-white dark:focus:bg-slate-900 hover:border-indigo-300 dark:hover:border-indigo-600/50 
+                         transition-all duration-300 shadow-sm"
               name="senderEmail"
               type="email"
               required
@@ -82,10 +88,11 @@ export default function Contact() {
           
           <div className="relative">
             <textarea
-              className="h-48 w-full p-5 rounded-xl border border-slate-200 dark:border-slate-700 
-                         bg-white/50 dark:bg-slate-800/50 text-slate-900 dark:text-white placeholder-slate-400 
+              className="h-48 w-full p-5 rounded-xl border border-slate-200/80 dark:border-slate-700/80 
+                         bg-white/60 dark:bg-slate-800/60 text-slate-900 dark:text-white placeholder-slate-400 
                          focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent 
-                         focus:bg-white dark:focus:bg-slate-900 transition-all duration-300 shadow-sm resize-none"
+                         focus:bg-white dark:focus:bg-slate-900 hover:border-indigo-300 dark:hover:border-indigo-600/50 
+                         transition-all duration-300 shadow-sm resize-none"
               name="message"
               placeholder="Your message"
               required
