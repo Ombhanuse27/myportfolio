@@ -31,14 +31,14 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       
-      <ul className="flex flex-wrap justify-center gap-3 text-lg text-slate-800">
+      <ul className="flex flex-wrap justify-center gap-2.5 sm:gap-4 text-lg text-slate-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white/40 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 
-                       backdrop-blur-sm rounded-xl px-5 py-3 text-sm sm:text-base font-mono
-                       text-slate-700 dark:text-slate-300 shadow-sm
+            className="group bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 
+                       backdrop-blur-md rounded-2xl px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-mono
+                       text-slate-700 dark:text-slate-300 shadow-sm hover:shadow-md hover:shadow-indigo-500/10
                        hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 
-                       dark:hover:text-indigo-400 transition-colors duration-300 cursor-default"
+                       dark:hover:text-indigo-400 transition-all duration-300 cursor-default"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -50,7 +50,7 @@ export default function Skills() {
             custom={index}
           >
             {/* Added a tiny code-like dot before each skill */}
-            <span className="text-indigo-500 mr-2 opacity-50">#</span>
+            <span className="text-indigo-500 mr-2 opacity-50 transition-opacity duration-300 group-hover:opacity-100">#</span>
             {skill}
           </motion.li>
         ))}
