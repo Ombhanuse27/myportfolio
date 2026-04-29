@@ -153,15 +153,15 @@ export const productsData = [
   },
   {
     title: "Pro Office",
-    description: "An industrial-grade IoT platform built for a real-world client team. Facilitates real-time monitoring and enables no-code device connections for hardware, functioning similarly to Blynk.",
+    description: "Pro EMS is a comprehensive Enterprise Management System designed to handle workforce tracking, attendance management, performance evaluation, and related administrative tasks.",
     tags: ["React.js","Tailwind", "Node.js","Express", "MongoDB", "Socket.io"],
     imageUrl: proacademy, // Replace with your actual imported image variable
-    link: "https://pro-career-academy.vercel.app/", // Replace with actual live link
+    link: "", // Replace with actual live link
   },
 
   {
     title: "Pro Career Academy",
-    description: "",
+    description: "Career-focused education platform for PRO CAREER ACADEMY that drives student admissions through AI-integrated learning, strong results showcase, and lead generation",
     tags: ["React.js","Tailwind", "Node.js","Express", "MongoDB", "Socket.io"],
     imageUrl: proacademy, // Replace with your actual imported image variable
     link: "https://pro-career-academy.vercel.app/", // Replace with actual live link
