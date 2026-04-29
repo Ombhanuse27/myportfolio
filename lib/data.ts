@@ -14,6 +14,7 @@ import skillpulse from "@/public/skillpulse.png";
 import prosearch from "@/public/prosearch.png";
 import pranayoga from "@/public/pranayoga.png"
 import proacademy from "@/public/proacademy.png"
+import proofice from "@/public/prooffice.png"
 export const links = [
   {
     name: "Home",
@@ -140,25 +141,25 @@ export const productsData = [
   {
     title: "ProSearch - AI-Powered Professional Search Engine ",
     description: "A Next-Gen Professional Networking & Job Search Platform Connecting talented professionals, innovative businesses, and skilled freelancers in one unified ecosystem.",
-    tags: ["React.js", "Tailwind","TypeScript","RBAC", "PostgreSQL", "Supabase"],
+    tags: ["React.js", "Tailwind","TypeScript","RBAC","reCAPTCHA v3", "PostgreSQL", "Supabase"],
     imageUrl:prosearch, // Replace with your actual imported image variable
     link: "https://prosearch.co.in/", // Replace with actual live link
   },
   {
+    title: "Pro Office",
+    description: "Pro EMS is a comprehensive Enterprise Management System designed to handle workforce tracking, attendance management, performance evaluation, and related administrative tasks.",
+    tags: ["React.js","Tailwind","Framer Motion","PostgreSQL","Supabase",],
+    imageUrl: proofice, // Replace with your actual imported image variable
+    link: "https://www.prooffice.in", // Replace with actual live link
+  },
+  {
     title: "Prana Yoga Studio",
     description: "Prana Yoga Studio, offering a seamless experience for users to explore yoga services, book appointments, and subscribe to online packages.",
-    tags: ["React.js", "Tailwind","Node.js","Express","MongoDB"],
+    tags: ["HTML5","CSS3","Javascript","Bootstrap","Node.js","Express","MongoDB"],
     imageUrl: pranayoga, // Replace with your actual imported image variable
     link: "https://www.pranayogastudio.in/", // Replace with actual live link
   },
-  {
-    title: "Pro Office",
-    description: "Pro EMS is a comprehensive Enterprise Management System designed to handle workforce tracking, attendance management, performance evaluation, and related administrative tasks.",
-    tags: ["React.js","Tailwind", "Node.js","Express", "MongoDB", "Socket.io"],
-    imageUrl: proacademy, // Replace with your actual imported image variable
-    link: "", // Replace with actual live link
-  },
-
+  
   {
     title: "Pro Career Academy",
     description: "Career-focused education platform for PRO CAREER ACADEMY that drives student admissions through AI-integrated learning, strong results showcase, and lead generation",
