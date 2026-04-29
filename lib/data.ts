@@ -21,6 +21,10 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Products", // <--- ADD THIS
+    hash: "#products", // <--- ADD THIS
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -125,6 +129,33 @@ export const projectsData = [
     type: "mobile",
     link: "https://github.com/Ombhanuse27/showwhub",
   },
+
+] as const;
+
+
+export const productsData = [
+  {
+    title: "ProSearch - AI-Powered Professional Search Engine ",
+    description: "A Next-Gen Professional Networking & Job Search Platform Connecting talented professionals, innovative businesses, and skilled freelancers in one unified ecosystem.",
+    tags: ["React.js", "Tailwind", "PostgreSQL", "Supabase"],
+    imageUrl: "/yoga.png", // Replace with your actual imported image variable
+    link: "https://your-yoga-link.com", // Replace with actual live link
+  },
+  {
+    title: "Prana Yoga Studio",
+    description: "Prana Yoga Studio, offering a seamless experience for users to explore yoga services, book appointments, and subscribe to online packages.",
+    tags: ["Next.js", "Tailwind", "PostgreSQL", "Prisma"],
+    imageUrl: "/yoga.png", // Replace with your actual imported image variable
+    link: "https://your-yoga-link.com", // Replace with actual live link
+  },
+  {
+    title: "IoT Control Platform",
+    description: "An industrial-grade IoT platform built for a real-world client team. Facilitates real-time monitoring and enables no-code device connections for hardware, functioning similarly to Blynk.",
+    tags: ["React", "Node.js", "WebSockets", "IoT"],
+    imageUrl: "/iot.png", // Replace with your actual imported image variable
+    link: "https://your-iot-link.com", // Replace with actual live link
+  },
+
 
 ] as const;
 
