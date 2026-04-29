@@ -13,14 +13,14 @@ export default function Products() {
   const isInView = useInView(scrollRef, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} id="products" className="scroll-mt-28 mb-28 w-full max-w-6xl mx-auto px-4 z-10 relative">
+    <section ref={ref} id="products" className="scroll-mt-28 mb-28 w-full max-w-7xl mx-auto z-10 relative">
       
-      {/* Background Decor - Emerald glow */}
-      <div className="absolute top-20 right-0 w-72 h-72 bg-emerald-500/10 rounded-full blur-[100px] -z-10" />
+      {/* Background Decor */}
+      <div className="absolute top-20 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-[100px] -z-10" />
 
       <SectionHeading>Real-World Products</SectionHeading>
       
-      <p className="text-center text-slate-600 dark:text-slate-400 mb-8 -mt-4 font-mono text-sm">
+      <p className="text-center text-slate-600 dark:text-slate-400 mb-10 -mt-4 font-mono text-sm px-4">
         {`// Applications currently in production with active users`}
       </p>
 
@@ -31,11 +31,11 @@ export default function Products() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="flex overflow-x-auto gap-5 sm:gap-6 pb-8 pt-4 px-2 sm:px-4 snap-x snap-mandatory
-                     /* Custom Scrollbar Styling */
-                     [&::-webkit-scrollbar]:h-2
+          /* Added `items-stretch` so all cards share the exact same height */
+          className="flex overflow-x-auto items-stretch gap-6 pb-12 pt-4 px-4 sm:px-8 snap-x snap-mandatory
+                     [&::-webkit-scrollbar]:h-2.5
                      [&::-webkit-scrollbar-track]:bg-slate-100 [&::-webkit-scrollbar-track]:dark:bg-slate-800/50 [&::-webkit-scrollbar-track]:rounded-full
-                     [&::-webkit-scrollbar-thumb]:bg-emerald-300 [&::-webkit-scrollbar-thumb]:dark:bg-emerald-600/50 [&::-webkit-scrollbar-thumb]:rounded-full
+                     [&::-webkit-scrollbar-thumb]:bg-emerald-300/80 [&::-webkit-scrollbar-thumb]:dark:bg-emerald-600/50 [&::-webkit-scrollbar-thumb]:rounded-full
                      hover:[&::-webkit-scrollbar-thumb]:bg-emerald-400 hover:[&::-webkit-scrollbar-thumb]:dark:bg-emerald-500
                      transition-all"
         >
@@ -44,12 +44,12 @@ export default function Products() {
           ))}
           
           {/* Spacer to allow scrolling past the last item neatly */}
-          <div className="shrink-0 w-4 sm:w-8" />
+          <div className="shrink-0 w-2 sm:w-4" />
         </motion.div>
 
-        {/* Optional: Fade edges for a premium look */}
-        <div className="absolute top-0 right-0 bottom-8 w-12 bg-gradient-to-l from-[#f3f4f6] dark:from-[#0f172a] to-transparent pointer-events-none z-10" />
-        <div className="absolute top-0 left-0 bottom-8 w-12 bg-gradient-to-r from-[#f3f4f6] dark:from-[#0f172a] to-transparent pointer-events-none z-10" />
+        {/* Fade edges for premium look */}
+        <div className="absolute top-0 right-0 bottom-12 w-8 sm:w-16 bg-gradient-to-l from-[#f3f4f6] dark:from-[#0f172a] to-transparent pointer-events-none z-10" />
+        <div className="absolute top-0 left-0 bottom-12 w-8 sm:w-16 bg-gradient-to-r from-[#f3f4f6] dark:from-[#0f172a] to-transparent pointer-events-none z-10" />
       </div>
     </section>
   );

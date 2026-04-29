@@ -13,6 +13,7 @@ import ShowHub from "@/public/showhub.png";
 import skillpulse from "@/public/skillpulse.png";
 import prosearch from "@/public/prosearch.png";
 import pranayoga from "@/public/pranayoga.png"
+import proacademy from "@/public/proacademy.png"
 export const links = [
   {
     name: "Home",
@@ -139,7 +140,7 @@ export const productsData = [
   {
     title: "ProSearch - AI-Powered Professional Search Engine ",
     description: "A Next-Gen Professional Networking & Job Search Platform Connecting talented professionals, innovative businesses, and skilled freelancers in one unified ecosystem.",
-    tags: ["React.js", "Tailwind", "PostgreSQL", "Supabase"],
+    tags: ["React.js", "Tailwind","TypeScript","RBAC", "PostgreSQL", "Supabase"],
     imageUrl:prosearch, // Replace with your actual imported image variable
     link: "https://prosearch.co.in/", // Replace with actual live link
   },
@@ -151,11 +152,19 @@ export const productsData = [
     link: "https://www.pranayogastudio.in/", // Replace with actual live link
   },
   {
-    title: "Pro Career Academy",
+    title: "Pro Office",
     description: "An industrial-grade IoT platform built for a real-world client team. Facilitates real-time monitoring and enables no-code device connections for hardware, functioning similarly to Blynk.",
-    tags: ["React", "Node.js", "WebSockets", "IoT"],
-    imageUrl: "/iot.png", // Replace with your actual imported image variable
-    link: "https://your-iot-link.com", // Replace with actual live link
+    tags: ["React.js","Tailwind", "Node.js","Express", "MongoDB", "Socket.io"],
+    imageUrl: proacademy, // Replace with your actual imported image variable
+    link: "https://pro-career-academy.vercel.app/", // Replace with actual live link
+  },
+
+  {
+    title: "Pro Career Academy",
+    description: "",
+    tags: ["React.js","Tailwind", "Node.js","Express", "MongoDB", "Socket.io"],
+    imageUrl: proacademy, // Replace with your actual imported image variable
+    link: "https://pro-career-academy.vercel.app/", // Replace with actual live link
   },
 
 
