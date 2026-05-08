@@ -7,7 +7,7 @@ export default function Footer() {
         &copy;  2026 Om Bhanuse. Designed & Developed by Om.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
+        <span className="font-semibold"></span> built with
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, Vercel hosting.
       </p>
