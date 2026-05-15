@@ -178,7 +178,7 @@ export default function Intro() {
             {/* Removed w-full from the wrapper div */}
             <div className="flex items-center gap-2 sm:gap-3">
               <a
-                href="/Om_Bhanuse_7757098385.pdf"
+                href="/Om_Bhanuse_Resume.pdf"
                 download
                 className="group bg-white/50 dark:bg-slate-900/50 text-slate-800 dark:text-white 
                            px-4 py-3 sm:px-5 lg:px-7 lg:py-3.5 rounded-full font-medium text-[11px] sm:text-xs lg:text-sm backdrop-blur-sm
