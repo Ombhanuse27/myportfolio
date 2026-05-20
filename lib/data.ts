@@ -146,7 +146,7 @@ export const productsData = [
     link: "https://prosearch.co.in/", // Replace with actual live link
   },
   {
-    title: "Pro Office",
+    title: "Pro Office - EMS System",
     description: "Pro EMS is a comprehensive Enterprise Management System designed to handle workforce tracking, attendance management, performance evaluation, and related administrative tasks.",
     tags: ["React.js","Tailwind","Framer Motion","PostgreSQL","Supabase",],
     imageUrl: proofice, // Replace with your actual imported image variable
