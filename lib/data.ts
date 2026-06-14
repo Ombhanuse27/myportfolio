@@ -51,8 +51,8 @@ export const experiencesData = [
     title: "Full Stack Developer Intern",
     location: "Softcadd Technologies, Pune",
     description:
-      "Developed and optimized production-ready frontend and backend modules using React, TypeScript, Tailwind CSS, and Supabase for a multi-role job search platform serving 200+ active users, improving application response time by 20%. Debugged production issues, optimized UI workflows, and collaborated using Git in an Agile development environment to deliver stable, production-ready deployments with improved application reliability.",
-    icon: React.createElement(FaReact),
+      "Developed and optimized production-ready frontend and backend modules using React.js, Node.js, TypeScript, Tailwind CSS, and Supabase across 5 live production applications including a multi-role job search platform serving 150+ active users. Implemented RBAC and JWT-based authentication flows, integrated third-party APIs, and resolved production-level frontend and backend issues across 5 live applications in an Agile development environment.",
+        icon: React.createElement(FaReact),
     date: "Jun 2026 - Present",
   },
   {
@@ -78,7 +78,7 @@ export const projectsData = [
 
   {
     title: "SkillPulse.ai",
-    description: "Built an AI-powered career coaching platform using multi-agent LLMs for personalized roadmaps, mock interviews, and skill-gap analysis. Developed a gamified dashboard with LangGraph, GraphQL, and PostgreSQL (Prisma), and integrated a real-time Neural Mentor AI assistant for contextual Q&A and adaptive learning.",
+    description: "Architected a multi-agent career development platform using LangChain and LangGraph — featuring Role-Aligned Resume Auditing & Skill-Gap Analysis, AI Mock Interviews, and Adaptive Skill Mastery Agent for end-to-end career growth. Built a gamified learning dashboard serving 20+ AI-generated roadmaps via GraphQL APIs, where users progress through XP, streak, goal tracking, contextual Q&A, and adaptive quiz tests, with learning plans persisted in PostgreSQL via Prisma ORM. Developed a streaming AI assistant with context-window management delivering sub-500ms average response time, enabling real-time concept explanations and session-aware Q&A within active learning sessions.",
     tags: ["Next.js", "PDF-Parser", "Groq", "LLM", "LangChain", "LangGraph", "Supabase", "Typescript"],
     imageUrl: skillpulse,
     link: "https://skills-pulse-ai-agent.vercel.app/",
