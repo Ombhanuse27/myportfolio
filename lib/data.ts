@@ -53,7 +53,7 @@ export const experiencesData = [
     description:
       "Developed and optimized production-ready frontend and backend modules using React.js, Node.js, TypeScript, Tailwind CSS, and Supabase across 5 live production applications including a multi-role job search platform serving 150+ active users. Implemented RBAC and JWT-based authentication flows, integrated third-party APIs, and resolved production-level frontend and backend issues across 5 live applications in an Agile development environment.",
         icon: React.createElement(FaReact),
-    date: "Jun 2026 - Present",
+    date: "Jun 2026 - May 2026",
   },
   {
     title: "Full Stack Intern",
